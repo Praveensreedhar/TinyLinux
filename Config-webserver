@@ -37,4 +37,4 @@ cd /etc/init.d/services/
 
 filetool.sh -b
 
-
+#sudo reboot
