@@ -26,12 +26,9 @@ Edit boot loader to load every thing when on start.
 #sudo vi /opt/bootlocal.sh
 
 cp /mnt/sda1/wwwsite/index.html /usr/local/httpd/bin/index.html
-
 cd usr/local/httpd/bin
-
 ./busybox httpd -p 80 -h /usr/local/httpd/bin
 cd /usr/local/etc/init.d/
-
 ./openssh start
 cd /etc/init.d/services/
 ./tftpd start
